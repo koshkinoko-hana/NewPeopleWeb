@@ -2,8 +2,9 @@ import React from "react";
 import { Form, Field } from 'react-final-form'
 import InputMask from "react-input-mask";
 import ClaimForm from "./styledComponents/ClaimForm";
-import {required, phone} from "../../utils";
+import {required, phone} from "../../utils/general";
 import Button from "../../styledComponents/Button";
+import {sendUserRequest} from "../../requests/userRequest";
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
@@ -14,10 +15,14 @@ interface Props {
 const LeaveClaimForm: React.FC<Props> = ({onSubmit}) => {
 
   const handleSubmit = async (values) => {
-    await sleep(300)
-    console.log(values);
-    onSubmit();
-    window.alert("Успешно сохранено");
+    try {
+      await sendUserRequest(values);
+      onSubmit();
+      alert("Успешно отправлено!");
+    } catch (e) {
+      onSubmit();
+      alert("Успешно не отправлено!");
+    }
   }
 
   return (

@@ -12,6 +12,10 @@ const MainContainer = styled.main`
   @media screen and (min-width: ${props => props.theme.width.laptop}) {
     width: 1024px;
   }
+  
+  @media screen and (max-width: ${props => props.theme.width.mobileMax}) {
+    padding: 50px 0 0;
+  }
 `;
 
 MainContainer.displayName = 'MainContainer';

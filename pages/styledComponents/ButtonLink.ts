@@ -1,4 +1,5 @@
 import styled, {css} from 'styled-components'
+import {addBreakpointRules} from "../utils/styled";
 
 const blueMixin = css`
   background-color: ${props => props.theme.color.sail};
@@ -34,4 +35,4 @@ const ButtonLink = styled.a<Props>`
   ${props => props.blue && blueMixin};
 `
 
-export default ButtonLink;
+export default addBreakpointRules(ButtonLink);

@@ -47,7 +47,7 @@ const sailMixin = css`
 `
 
 const InfoCard = styled.article<Props>`
-  width: calc(100% - 20px);
+  width: 100%;
   box-shadow: 0px 3px 7px 5px rgba(0, 0, 0, .07);
   cursor: pointer;
   display: flex;

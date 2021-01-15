@@ -8,6 +8,12 @@ const FormContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  
+  @media screen and (max-width: ${props => props.theme.width.mobileBigger}) {
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
 `
 
 export default FormContainer;

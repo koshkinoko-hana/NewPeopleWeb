@@ -5,11 +5,15 @@ import Logo from "./styledComponents/Logo";
 import ButtonLink from "../../styledComponents/ButtonLink";
 import LeaveClaimForm from "./LeaveClaimForm";
 import FormContainer from "./styledComponents/FormContainer";
+import HamburgerButton from "./styledComponents/HamburgerButton";
+import Menu from "../Menu";
+import FormDropdown from "./styledComponents/FormDropdown";
 
 const Header: React.FC = () => {
 
   const [distanceToFixed, setDistanceToFixed] = useState(100);
   const [showLeaveClaim, setShowLeaveClaim] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const onScroll = () => {
     const scrollHeight = 100 - window.scrollY;
@@ -31,27 +35,31 @@ const Header: React.FC = () => {
   const renderLeaveClaim = () => {
     if (showLeaveClaim) {
       return (
-        <div style={{position: 'relative', left: '-350px', justifyContent: 'space-arounds'}}>
+        <FormDropdown>
           <FormContainer><LeaveClaimForm onSubmit={onClaimFormSubmit}/></FormContainer>
-        </div>
+        </FormDropdown>
       );
     }
     return null;
   }
 
   return (
-    <HeaderContainer>
-      <Logo height={distanceToFixed}/>
-      <LinksContainer>
-        <ButtonLink>Главная</ButtonLink>
-        <ButtonLink>Формы пребывания</ButtonLink>
-        <ButtonLink>Центр развития</ButtonLink>
-        <ButtonLink>Новости</ButtonLink>
-        <ButtonLink>Контакты</ButtonLink>
-        <ButtonLink blue shadowed onClick={() => setShowLeaveClaim(!showLeaveClaim)}>Оставить заявку</ButtonLink>
-      </LinksContainer>
-      {renderLeaveClaim()}
-    </HeaderContainer>
+    <>
+      <Menu isOpen={menuOpen}/>
+      <HeaderContainer>
+        <Logo height={distanceToFixed}/>
+        <LinksContainer>
+          <ButtonLink hideOnMobile>Главная</ButtonLink>
+          <ButtonLink hideOnMobile>Формы пребывания</ButtonLink>
+          <ButtonLink hideOnMobile>Центр развития</ButtonLink>
+          <ButtonLink hideOnMobile>Новости</ButtonLink>
+          <ButtonLink hideOnMobile>Контакты</ButtonLink>
+          <ButtonLink blue shadowed onClick={() => setShowLeaveClaim(!showLeaveClaim)}>Оставить заявку</ButtonLink>
+          {renderLeaveClaim()}
+          <HamburgerButton onClick={() => setMenuOpen(!menuOpen)}/>
+        </LinksContainer>
+      </HeaderContainer>
+    </>
   )
 }
 

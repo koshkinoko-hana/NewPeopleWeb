@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
         <CarouselItem>
           <img src="/children/1.jpg" />
           <p>
-            <h3>Это заголовок</h3>
+            <strong>Это заголовок</strong><br/>
             Это описание к фотографии 1.
           </p>
         </CarouselItem>
@@ -49,14 +49,14 @@ const HomePage: React.FC = () => {
         </CarouselItem>
       </Carousel>
       <InfoCard/>
-      <MapContainer>
-        <TextBlock>
-          <h2>Приходите к нам!</h2>
-          <p>Мы находимся по адресу: <strong>ул. Такая, дом 479</strong></p>
-          <p>Телефон: <strong>8-999-000-33-22</strong></p>
-        </TextBlock>
-        <MapFrame/>
-      </MapContainer>
+      {/*<MapContainer>*/}
+      {/*  <TextBlock>*/}
+      {/*    <h2>Приходите к нам!</h2>*/}
+      {/*    <p>Мы находимся по адресу: <strong>ул. Такая, дом 479</strong></p>*/}
+      {/*    <p>Телефон: <strong>8-999-000-33-22</strong></p>*/}
+      {/*  </TextBlock>*/}
+      {/*  <MapFrame/>*/}
+      {/*</MapContainer>*/}
     </Container>
   )
 }

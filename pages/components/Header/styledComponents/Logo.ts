@@ -9,6 +9,11 @@ const Logo = styled.img.attrs({
 })<Props>`
   background-color: ${props => props.theme.color.white};
   height: ${props => props.height}px;
+  
+  
+  @media screen and (max-width: ${props => props.theme.width.mobileMax}) {
+    height: 50px;
+  }
 `;
 
 export default Logo;
