@@ -18,6 +18,8 @@ const Button = styled.button`
     background-color: ${props => props.theme.color.sail};
   }
   font-weight: 200;
-`
+`;
+
+Button.displayName = 'Button';
 
 export default Button;

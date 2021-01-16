@@ -15,4 +15,6 @@ const FormDropdown = addBreakpointRules(styled.div`
   }
 `);
 
+FormDropdown.displayName = 'FormDropdown';
+
 export default FormDropdown;

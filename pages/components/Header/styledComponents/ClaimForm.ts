@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const claimForm = styled.form`
+const СlaimForm = styled.form`
   display:flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -44,10 +44,11 @@ const claimForm = styled.form`
     }
   }
   
-  
   @media screen and (max-width: ${props => props.theme.width.mobileBigger}) {
     width: 100%;
   }
-`
+`;
 
-export default claimForm;
+СlaimForm.displayName = 'СlaimForm';
+
+export default СlaimForm;

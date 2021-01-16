@@ -43,6 +43,8 @@ const CarouselArrow = styled.button<{next?: boolean}>`
   @media screen and (max-width: ${props => props.theme.width.mobileMax}) {
     height: calc(100% - 60px);
   }
-`
+`;
+
+CarouselArrow.displayName = 'CarouselArrow';
 
 export default CarouselArrow;

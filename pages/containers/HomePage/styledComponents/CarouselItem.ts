@@ -97,4 +97,6 @@ const CarouselItem = styled.div`
   }
 `;
 
+CarouselItem.displayName = 'CarouselItem';
+
 export default CarouselItem;

@@ -33,4 +33,6 @@ const LinksContainer = styled.div`
   }
 `;
 
+LinksContainer.displayName = 'LinksContainer';
+
 export default LinksContainer;

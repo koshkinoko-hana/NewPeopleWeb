@@ -5,6 +5,8 @@ const CardsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px 10px;
-`
+`;
+
+CardsContainer.displayName = 'CardsContainer';
 
 export default CardsContainer;

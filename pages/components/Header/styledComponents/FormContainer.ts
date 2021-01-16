@@ -14,6 +14,8 @@ const FormContainer = styled.div`
     left: 0;
     width: 100%;
   }
-`
+`;
+
+FormContainer.displayName = 'FormContainer';
 
 export default FormContainer;

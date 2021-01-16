@@ -16,4 +16,6 @@ const Logo = styled.img.attrs({
   }
 `;
 
+Logo.displayName = 'Logo';
+
 export default Logo;

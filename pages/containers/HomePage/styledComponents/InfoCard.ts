@@ -93,6 +93,8 @@ const InfoCard = styled.article<Props>`
   ${props => props.scheme === 'conifer' && coniferMixin};
   ${props => props.scheme === 'tumbleweed' && tumbleweedMixin};
   ${props => props.scheme === 'sail' && sailMixin};
-`
+`;
+
+InfoCard.displayName = 'InfoCard';
 
 export default InfoCard;

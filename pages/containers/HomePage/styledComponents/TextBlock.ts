@@ -9,4 +9,6 @@ const TextBlock = styled.article`
   }
 `;
 
+TextBlock.displayName = 'TextBlock';
+
 export default TextBlock;

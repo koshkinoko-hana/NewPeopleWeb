@@ -14,4 +14,6 @@ const HeaderContainer = styled.nav`
   box-shadow: 0px 3px 7px 5px rgba(0, 0, 0, .07);
 `;
 
+HeaderContainer.displayName = 'HeaderContainer';
+
 export default HeaderContainer;

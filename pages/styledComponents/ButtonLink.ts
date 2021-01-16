@@ -33,6 +33,8 @@ const ButtonLink = styled.a<Props>`
   font-weight: 200;
   
   ${props => props.blue && blueMixin};
-`
+`;
+
+ButtonLink.displayName = 'ButtonLink';
 
 export default addBreakpointRules(ButtonLink);
