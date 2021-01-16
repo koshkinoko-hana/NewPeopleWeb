@@ -4,10 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Container from "../../styledComponents/Container";
 import CarouselItem from "./styledComponents/CarouselItem";
 import CarouselArrow from "./styledComponents/CarouselArrow";
-import InfoCard from "./InfoCard";
-import MapFrame from "../../components/Map/MapFrame";
-import MapContainer from "./styledComponents/MapContainer";
-import TextBlock from "./styledComponents/TextBlock";
+import InfoCardsBlock from "./InfoCardsBlock";
 
 const HomePage: React.FC = () => {
 
@@ -48,7 +45,7 @@ const HomePage: React.FC = () => {
           <p>Legend 3</p>
         </CarouselItem>
       </Carousel>
-      <InfoCard/>
+      <InfoCardsBlock/>
       {/*<MapContainer>*/}
       {/*  <TextBlock>*/}
       {/*    <h2>Приходите к нам!</h2>*/}

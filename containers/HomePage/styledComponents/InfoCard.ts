@@ -74,6 +74,7 @@ const InfoCard = styled.article<Props>`
   padding: 10px;
   p {
     padding: 0;
+    padding-bottom: 5px;
     margin: 0;
   }
   

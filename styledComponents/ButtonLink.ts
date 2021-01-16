@@ -19,6 +19,7 @@ interface Props {
 
 const ButtonLink = styled.a<Props>`
   color: ${props => props.theme.color.halfBakedDark75};
+  text-decoration: none;
   height: 50px;
   padding: 6px 20px;
   text-align: center;
@@ -29,6 +30,7 @@ const ButtonLink = styled.a<Props>`
   cursor: pointer;
   &:hover {
     background-color: ${props => props.theme.color.sail};
+    text-decoration: none;
   }
   font-weight: 200;
   

@@ -5,7 +5,7 @@ import data from './data.json'
 import {schemes} from "./constants";
 import ButtonLink from "../../styledComponents/ButtonLink";
 
-const InfoCard: React.FC = () => {
+const InfoCardsBlock: React.FC = () => {
   const renderCards = () => {
     return Object.keys(data).map((key, index) => (
       <Card scheme={schemes[index]} key={`card-${index}`}>
@@ -13,7 +13,7 @@ const InfoCard: React.FC = () => {
           <h2>{data[key].header}</h2>
           <p>{data[key].text}</p>
         </div>
-        <ButtonLink>Узнать подробнее</ButtonLink>
+        <ButtonLink href="/about">Узнать подробнее</ButtonLink>
       </Card>
     ))
   }
@@ -25,4 +25,4 @@ const InfoCard: React.FC = () => {
   )
 }
 
-export default InfoCard;
+export default InfoCardsBlock;

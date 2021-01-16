@@ -17,7 +17,6 @@ const Header: React.FC = () => {
 
   const onScroll = () => {
     const scrollHeight = 100 - window.scrollY;
-    debugger;
     setDistanceToFixed(scrollHeight <= 50 ? 50 : scrollHeight);
   }
 
