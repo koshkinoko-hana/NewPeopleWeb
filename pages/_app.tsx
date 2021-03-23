@@ -5,10 +5,19 @@ import '../global.css';
 import theme from "../globalTheme";
 
 const GlobalStyle = createGlobalStyle`
+  html {
+    height: 100%;
+  }
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
+    
+    >div {
+      background: rgba(255, 255, 255, 0.6);
+      height: 100%;
+    }
   }
 `
 

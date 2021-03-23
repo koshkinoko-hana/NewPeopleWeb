@@ -48,11 +48,11 @@ const Header: React.FC = () => {
       <HeaderContainer>
         <Logo height={distanceToFixed}/>
         <LinksContainer>
-          <ButtonLink hideOnMobile>Главная</ButtonLink>
-          <ButtonLink hideOnMobile>Формы пребывания</ButtonLink>
+          <ButtonLink hideOnMobile href="/">Главная</ButtonLink>
+          <ButtonLink hideOnMobile>Форматы пребывания</ButtonLink>
           <ButtonLink hideOnMobile>Центр развития</ButtonLink>
           <ButtonLink hideOnMobile>Новости</ButtonLink>
-          <ButtonLink hideOnMobile>Контакты</ButtonLink>
+          <ButtonLink hideOnMobile href="/contacts">Контакты</ButtonLink>
           <ButtonLink blue shadowed onClick={() => setShowLeaveClaim(!showLeaveClaim)}>Оставить заявку</ButtonLink>
           {renderLeaveClaim()}
           <HamburgerButton onClick={() => setMenuOpen(!menuOpen)}/>

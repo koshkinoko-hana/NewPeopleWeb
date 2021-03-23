@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 const MainContainer = styled.main`
-  width: auto;
+  width: 100%;
   background-color: ${props => props.theme.color.white};
-  padding: 100px 10px 0;
+  padding: 20px 10px 0;
   
   margin-bottom: 30px;
   
@@ -14,7 +14,7 @@ const MainContainer = styled.main`
   }
   
   @media screen and (max-width: ${props => props.theme.width.mobileMax}) {
-    padding: 50px 0 0;
+    padding: 0 0;
   }
 `;
 

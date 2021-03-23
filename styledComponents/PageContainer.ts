@@ -4,7 +4,13 @@ const PageContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: ${props => props.theme.color.white};
+  padding: 130px 0 80px;
+  
+  
+  
+  @media screen and (max-width: ${props => props.theme.width.mobileMax}) {
+    padding: 70px 0 30px;
+  }
 `;
 
 PageContainer.displayName = 'PageContainer';

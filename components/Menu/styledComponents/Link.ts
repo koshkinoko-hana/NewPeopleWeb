@@ -4,6 +4,7 @@ const Link = styled.a`
   color: ${props => props.theme.color.halfBakedDark75};
   font-size: 14pt;
   text-transform: uppercase;
+  text-decoration: none;
   
   &:hover {
     color: ${props => props.theme.color.sailDark50};

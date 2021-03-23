@@ -13,10 +13,10 @@ const App: React.FC = ({children}) => {
       </Head>
 
       <PageContainer>
-        <Header/>
-        <MainContainer>
-          {children}
-        </MainContainer>
+          <Header/>
+          <MainContainer>
+            {children}
+          </MainContainer>
       </PageContainer>
     </>
   );

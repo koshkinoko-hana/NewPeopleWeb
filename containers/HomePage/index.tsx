@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
   }
 
   return (
-    <Container>
+    <Container mobileNoPadding>
       <Carousel
         showArrows={true}
         showThumbs={false}
@@ -46,14 +46,6 @@ const HomePage: React.FC = () => {
         </CarouselItem>
       </Carousel>
       <InfoCardsBlock/>
-      {/*<MapContainer>*/}
-      {/*  <TextBlock>*/}
-      {/*    <h2>Приходите к нам!</h2>*/}
-      {/*    <p>Мы находимся по адресу: <strong>ул. Такая, дом 479</strong></p>*/}
-      {/*    <p>Телефон: <strong>8-999-000-33-22</strong></p>*/}
-      {/*  </TextBlock>*/}
-      {/*  <MapFrame/>*/}
-      {/*</MapContainer>*/}
     </Container>
   )
 }

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const Container = styled.div`
-  padding: 30px 0;
+const Container = styled.div<{mobileNoPadding?: boolean}>`
+  padding: 30px 20px;
   
   @media screen and (max-width: ${props => props.theme.width.mobileMax}) {
-    padding: 0;
+    ${props => props.mobileNoPadding && 'padding: 0;'};
   }
 `;
 
