@@ -3,7 +3,7 @@ import styled from "styled-components";
 const MapFrame = styled.iframe.attrs( () => ({
   id: 'iframeTV1',
   title: 'iframeTV1',
-  src: "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJyVMEIZwvO0ERQLKlPXJxBT0&key=AIzaSyDFOZx014vSzG9uAYtOzECFyg2icX6Hihg&language=ru" ,
+  src: `https://www.google.com/maps/embed/v1/place?q=${process.env.MAP_KEY}&language=ru`,
   height:"450",
   frameborder:"0",
   style: {border:0},
