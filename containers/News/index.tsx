@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "../../styledComponents/Container";
 import data from "./data.json";
-import ButtonLink from "../../styledComponents/ButtonLink";
 import NewsItem from "./styledComponents/NewsItem";
 import Image from "./styledComponents/Image";
 import TextBlock from "./styledComponents/TextBlock";
@@ -24,7 +23,7 @@ const Contacts: React.FC = () => {
   return (
     <Container>
       <Header color="sailDark50">Новости</Header>
-      {renderCards()}
+      Здесь скоро будут наши новости!
     </Container>
   );
 };

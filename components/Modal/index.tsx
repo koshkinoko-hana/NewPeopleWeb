@@ -1,21 +1,20 @@
 import React from "react";
-import Modal from 'react-bootstrap/Modal'
-import ButtonLink from "../../styledComponents/ButtonLink";
+import Button from "../../styledComponents/Button";
+import ModalContainer from "./styledComponents/ModalContainer";
+import ModalPageCover from "./styledComponents/ModalPageCover";
+import CloseButton from "./styledComponents/CloseButton";
+import Message from "./styledComponents/Message";
 
-const ModalComponent: React.FC<{header: string, text: string}> = ({header, text}) => {
+const ModalComponent: React.FC<{text: string, onHide: () => void}> = ({text, onHide}) => {
   return (
-    <Modal.Dialog>
-      <Modal.Header closeButton>
-        <Modal.Title>{header}</Modal.Title>
-      </Modal.Header>
-
-      <Modal.Body>
-        <p>{text}</p>
-      </Modal.Body>
-
-      <Modal.Footer>
-        <ButtonLink>Ок</ButtonLink>
-      </Modal.Footer>
-    </Modal.Dialog>
+    <ModalPageCover>
+      <ModalContainer>
+        <CloseButton onClick={onHide}>x</CloseButton>
+        <Message>{text}</Message>
+        <Button onClick={onHide}>Ок</Button>
+      </ModalContainer>
+    </ModalPageCover>
   )
 }
+
+export default ModalComponent;

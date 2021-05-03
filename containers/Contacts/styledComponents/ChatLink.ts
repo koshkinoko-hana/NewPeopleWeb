@@ -23,6 +23,18 @@ const telegramMixin = css`
     }
 `
 
+const instagramMixin = css`
+  background: #FF69B4;
+  svg {
+    color: #FF69B4;
+    padding: 1px;
+  }
+  
+  &:hover {
+    border: 2px solid #FF1493;
+    }
+`
+
 const phoneMixin = css`
   background: white;
   padding-left: 23px;
@@ -37,6 +49,7 @@ const phoneMixin = css`
 interface Props {
   whatsApp?: boolean;
   telegram?: boolean;
+  instagram?: boolean;
   phone?: boolean;
 }
 
@@ -69,6 +82,7 @@ const ChatLink = styled.a<Props>`
   
   ${props => props.whatsApp && whatsAppMixin};
   ${props => props.telegram && telegramMixin};
+  ${props => props.instagram && instagramMixin};
   ${props => props.phone && phoneMixin};
 `;
 

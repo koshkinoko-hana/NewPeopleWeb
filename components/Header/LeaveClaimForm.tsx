@@ -18,10 +18,8 @@ const LeaveClaimForm: React.FC<Props> = ({onSubmit}) => {
     try {
       await sendUserRequest(values);
       onSubmit();
-      alert("Успешно отправлено!");
     } catch (e) {
       onSubmit();
-      alert("Успешно не отправлено!");
     }
   }
 

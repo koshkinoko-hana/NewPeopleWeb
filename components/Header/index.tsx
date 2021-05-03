@@ -8,11 +8,13 @@ import FormContainer from "./styledComponents/FormContainer";
 import HamburgerButton from "./styledComponents/HamburgerButton";
 import Menu from "../Menu";
 import FormDropdown from "./styledComponents/FormDropdown";
+import ModalComponent from "../Modal";
 
 const Header: React.FC = () => {
 
   const [distanceToFixed, setDistanceToFixed] = useState(100);
   const [showLeaveClaim, setShowLeaveClaim] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const onScroll = () => {
@@ -29,6 +31,11 @@ const Header: React.FC = () => {
 
   const onClaimFormSubmit = () => {
     setShowLeaveClaim(false);
+    setShowModal(true);
+  }
+
+  const onHide = () => {
+    setShowModal(false);
   }
 
   const renderLeaveClaim = () => {
@@ -49,15 +56,16 @@ const Header: React.FC = () => {
         <Logo height={distanceToFixed}/>
         <LinksContainer>
           <ButtonLink hideOnMobile href="/">Главная</ButtonLink>
-          <ButtonLink hideOnMobile>Форматы пребывания</ButtonLink>
-          <ButtonLink hideOnMobile>Центр развития</ButtonLink>
-          <ButtonLink hideOnMobile>Новости</ButtonLink>
+          <ButtonLink hideOnMobile href="/forms">Форматы пребывания</ButtonLink>
+          <ButtonLink hideOnMobile href="/about">О нас</ButtonLink>
+          <ButtonLink hideOnMobile href="/news">Новости</ButtonLink>
           <ButtonLink hideOnMobile href="/contacts">Контакты</ButtonLink>
           <ButtonLink blue shadowed onClick={() => setShowLeaveClaim(!showLeaveClaim)}>Оставить заявку</ButtonLink>
           {renderLeaveClaim()}
           <HamburgerButton onClick={() => setMenuOpen(!menuOpen)}/>
         </LinksContainer>
       </HeaderContainer>
+      {showModal && <ModalComponent text={"Заявка успешно отправлена"} onHide={onHide}/>}
     </>
   )
 }

@@ -5,6 +5,7 @@ import Container from "../../styledComponents/Container";
 import CarouselItem from "./styledComponents/CarouselItem";
 import CarouselArrow from "./styledComponents/CarouselArrow";
 import InfoCardsBlock from "./InfoCardsBlock";
+import ChatLink from "../Contacts/styledComponents/ChatLink";
 
 const HomePage: React.FC = () => {
 
@@ -32,17 +33,32 @@ const HomePage: React.FC = () => {
         <CarouselItem>
           <img src="/children/1.jpg" />
           <p>
-            <strong>Это заголовок</strong><br/>
-            Это описание к фотографии 1.
+            Фото <a href={`https://www.instagram.com/autmama36`}>@autmama36</a>
           </p>
         </CarouselItem>
         <CarouselItem>
           <img src="/children/2.jpg" />
-          <p>Legend 2</p>
+          <p>
+            Фото <a href={`https://www.instagram.com/autmama36`}>@autmama36</a>
+          </p>
         </CarouselItem>
         <CarouselItem>
           <img src="/children/3.jpg" />
-          <p>Legend 3</p>
+          <p>
+            Фото <a href={`https://www.instagram.com/autmama36`}>@autmama36</a>
+          </p>
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/children/4.jpg" />
+          <p>
+            Фото <a href={`https://www.instagram.com/autmama36`}>@autmama36</a>
+          </p>
+        </CarouselItem>
+        <CarouselItem>
+          <img src="/children/10.jpg" />
+          <p>
+            Фото <a href={`https://www.instagram.com/autmama36`}>@autmama36</a>
+          </p>
         </CarouselItem>
       </Carousel>
       <InfoCardsBlock/>

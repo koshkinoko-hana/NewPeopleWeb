@@ -3,6 +3,7 @@ import ButtonLink from "../../../styledComponents/ButtonLink";
 
 interface Props {
   scheme: string;
+  three?: boolean;
 }
 
 const halfBakedMixin = css`
@@ -85,10 +86,12 @@ const InfoCard = styled.article<Props>`
   
   @media screen and (min-width: ${props => props.theme.width.mobileL}) {
     width: calc(50% - 20px);
+    ${props => props.three && "width: calc(33% - 20px);"}
   }
   
   @media screen and (min-width: ${props => props.theme.width.laptop}) {
     width: calc(25% - 20px);
+    ${props => props.three && "width: calc(33% - 20px);"}
   }
   ${props => props.scheme === 'halfBaked' && halfBakedMixin};
   ${props => props.scheme === 'conifer' && coniferMixin};

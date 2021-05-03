@@ -6,6 +6,7 @@ const Image = styled.img`
   height: auto;
   max-height: 400px;
   object-fit: cover;
+  top: 0;
   
 `;
 

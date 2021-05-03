@@ -5,6 +5,7 @@ const NewsItem = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
+  box-shadow: 0px 3px 7px 5px rgba(0, 0, 0, .07);
 `;
 
 export default NewsItem;

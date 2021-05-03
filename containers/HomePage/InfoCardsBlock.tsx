@@ -13,7 +13,7 @@ const InfoCardsBlock: React.FC = () => {
           <h2>{data[key].header}</h2>
           <p>{data[key].text}</p>
         </div>
-        <ButtonLink href="/about">Узнать подробнее</ButtonLink>
+        <ButtonLink href={data[key].link}>Узнать подробнее</ButtonLink>
       </Card>
     ))
   }

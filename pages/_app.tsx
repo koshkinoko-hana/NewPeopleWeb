@@ -13,10 +13,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     height: 100%;
+      
     
     >div {
       background: rgba(255, 255, 255, 0.6);
-      height: 100%;
+      min-height: 100%;
     }
   }
 `
