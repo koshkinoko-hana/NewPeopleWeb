@@ -1,0 +1,1 @@
+export const schemes = ['halfBaked', 'conifer', 'tumbleweed', 'sail'];

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "ComicHelvetic";
+    src: url("public/fonts/comic_helvetic/ComicHelvetic_Medium.otf");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ComicHelvetic";
+    src: url("public/fonts/comic_helvetic/ComicHelvetic_Light.otf");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ComicHelvetic";
+    src: url("public/fonts/comic_helvetic/ComicHelvetic_Heavy.otf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: ComicHelvetic;
+    background-position: center top;
+    background-image: url("/back-2.png");
+}
+
+* {
+    box-sizing: border-box;
+}
