@@ -47,6 +47,10 @@ const CarouselItem = styled.div`
       font-size: 15pt;
       line-height: 1;
     }
+    
+    >a {
+      color: ${props => props.theme.color.halfBakedDark50};
+    }
   }
   
   
