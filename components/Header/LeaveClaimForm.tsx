@@ -9,7 +9,7 @@ import {sendUserRequest} from "../../requests/userRequest";
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 interface Props {
-  onSubmit: () => void;
+  onSubmit: (res: boolean) => void;
 }
 
 const LeaveClaimForm: React.FC<Props> = ({onSubmit}) => {
@@ -17,9 +17,9 @@ const LeaveClaimForm: React.FC<Props> = ({onSubmit}) => {
   const handleSubmit = async (values) => {
     try {
       await sendUserRequest(values);
-      onSubmit();
+      onSubmit(true);
     } catch (e) {
-      onSubmit();
+      onSubmit(false);
     }
   }
 

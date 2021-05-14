@@ -15,6 +15,7 @@ const Header: React.FC = () => {
   const [distanceToFixed, setDistanceToFixed] = useState(100);
   const [showLeaveClaim, setShowLeaveClaim] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [requestRes, setRequestRes] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const onScroll = () => {
@@ -29,13 +30,15 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  const onClaimFormSubmit = () => {
+  const onClaimFormSubmit = (res: boolean) => {
     setShowLeaveClaim(false);
+    setRequestRes(res);
     setShowModal(true);
   }
 
   const onHide = () => {
     setShowModal(false);
+    setRequestRes(null);
   }
 
   const renderLeaveClaim = () => {
@@ -65,7 +68,9 @@ const Header: React.FC = () => {
           <HamburgerButton onClick={() => setMenuOpen(!menuOpen)}/>
         </LinksContainer>
       </HeaderContainer>
-      {showModal && <ModalComponent text={"Заявка успешно отправлена"} onHide={onHide}/>}
+      {showModal && <ModalComponent
+        text={requestRes ? "Заявка успешно отправлена" : "Произошла ошибка, повторите попытку позже"}
+        onHide={onHide}/>}
     </>
   )
 }

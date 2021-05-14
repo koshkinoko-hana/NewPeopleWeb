@@ -3,7 +3,10 @@ export const sendUserRequest = async (data: { age: number, phone: string, commen
     "http://localhost:8080/request",
     {
       method: "POST",
-      body: JSON.stringify(data),
+      headers: [
+        ["Content-Type", "application/json"]
+      ],
+      body: JSON.stringify(data)
     }
   );
 }
