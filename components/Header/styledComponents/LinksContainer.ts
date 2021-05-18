@@ -29,6 +29,7 @@ const LinksContainer = styled.div`
   @media screen and (max-width: 900px) {
     ${ButtonLink} {
         padding: 6px 10px;
+        max-width: 130px;
     }
   }
 `;

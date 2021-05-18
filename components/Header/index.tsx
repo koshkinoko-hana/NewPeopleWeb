@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 
   const onScroll = () => {
     const scrollHeight = 100 - window.scrollY;
-    setDistanceToFixed(scrollHeight <= 50 ? 50 : scrollHeight);
+    setDistanceToFixed(scrollHeight <= 70 ? 70 : scrollHeight);
   }
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const Header: React.FC = () => {
         <Logo height={distanceToFixed}/>
         <LinksContainer>
           <ButtonLink hideOnMobile href="/">Главная</ButtonLink>
-          <ButtonLink hideOnMobile href="/forms">Форматы пребывания</ButtonLink>
+          <ButtonLink hideOnMobile href="/forms">Наши форматы</ButtonLink>
           <ButtonLink hideOnMobile href="/about">О нас</ButtonLink>
           <ButtonLink hideOnMobile href="/news">Новости</ButtonLink>
           <ButtonLink hideOnMobile href="/contacts">Контакты</ButtonLink>

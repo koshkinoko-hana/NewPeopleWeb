@@ -8,42 +8,42 @@ interface Props {
 
 const halfBakedMixin = css`
   background: ${props => props.theme.color.halfBaked};
-  color: ${props => props.theme.color.white};
+  color: ${props => props.theme.color.halfBakedDark75};
   border-top: 10px solid ${props => props.theme.color.tumbleweed};
   h2 {
-    color: ${props => props.theme.color.white};
+    color: ${props => props.theme.color.halfBakedDark75};
   }
 `
 
 const coniferMixin = css`
   background: ${props => props.theme.color.conifer};
-  color: ${props => props.theme.color.white};
+  color: ${props => props.theme.color.coniferDark75};
   
   border-top: 10px solid ${props => props.theme.color.sail};
   
   h2 {
-    color: ${props => props.theme.color.white};
+    color: ${props => props.theme.color.coniferDark75};
   }
 `
 
 const tumbleweedMixin = css`
   background: ${props => props.theme.color.tumbleweed};
-  color: ${props => props.theme.color.white};
+  color: ${props => props.theme.color.tumbleweedDark75};
   
   border-top: 10px solid ${props => props.theme.color.halfBaked};
   
   h2 {
-    color: ${props => props.theme.color.white};
+    color: ${props => props.theme.color.tumbleweedDark75};
   }
 `
 
 const sailMixin = css`
   background: ${props => props.theme.color.sail};
-  color: ${props => props.theme.color.white};
+  color: ${props => props.theme.color.halfBakedDark75};
   
   border-top: 10px solid ${props => props.theme.color.conifer};
   h2 {
-    color: ${props => props.theme.color.white};
+    color: ${props => props.theme.color.halfBakedDark75};
   }
 `
 
@@ -54,9 +54,13 @@ const InfoCard = styled.article<Props>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  p {
+    font-size: 16pt;
+  }
   
   h2 {
-    margin: 5px 0;
+    margin: 5px 0 15px;
+    font-size: 18pt;
   }
   
   &:hover {
