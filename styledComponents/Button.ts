@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
-  font-family: "ComicHelvetic";
+  font-family: "Vollkorn";
   font-size: 12pt;
-  font-weight: 500 !important;
+  font-weight: 700 !important;
   color: ${props => props.theme.color.halfBakedDark50} !important;
   height: 50px;
   padding: 6px 20px;
@@ -17,7 +17,6 @@ const Button = styled.button`
   &:hover {
     background-color: ${props => props.theme.color.sail};
   }
-  font-weight: 200;
 `;
 
 Button.displayName = 'Button';

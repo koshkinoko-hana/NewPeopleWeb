@@ -5,7 +5,7 @@ const blueMixin = css`
   background-color: ${props => props.theme.color.sail};
   border: 2px solid rgba(0, 0, 0, 0.3);
     border: 2px solid ${props => props.theme.color.sailDark50};
-  font-weight: 500;
+  font-weight: 800;
   &:hover {
     background-color: ${props => props.theme.color.conifer};
     border: 2px solid ${props => props.theme.color.coniferDark75};
@@ -20,7 +20,7 @@ interface Props {
 const ButtonLink = styled.a<Props>`
   color: ${props => props.theme.color.halfBakedDark75};
   text-decoration: none;
-  height: 50px;
+  height: 70px;
   padding: 6px 20px;
   text-align: center;
   display: flex;
@@ -32,7 +32,7 @@ const ButtonLink = styled.a<Props>`
     background-color: ${props => props.theme.color.sail};
     text-decoration: none;
   }
-  font-weight: 200;
+  font-weight: 500;
   
   ${props => props.blue && blueMixin};
 `;

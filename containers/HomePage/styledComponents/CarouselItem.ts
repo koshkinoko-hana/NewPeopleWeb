@@ -29,6 +29,12 @@ const CarouselItem = styled.div`
    background: transparent;
   }
   
+  img {
+    height: 500px;    
+    object-fit: contain;
+    background: white;
+  }
+  
   p {
     position: absolute;
     bottom: 0;
