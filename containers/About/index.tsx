@@ -1,15 +1,11 @@
 import React from "react";
 import Image from "../../styledComponents/Image";
 import Container from "../../styledComponents/Container";
-import Header from "../../styledComponents/Header";
-import MainContainer from "./styledComponents/MainContainer";
-import SideContainer from "./styledComponents/SideContainer";
-import data from './data.json';
+import Header, {SubHeader} from "../../styledComponents/Header";
 import Article from "./styledComponents/Article";
 import TextBlock from "./styledComponents/TextBlock";
 import DocumentsBlock from "./styledComponents/DocumentsBlock";
 import {VscFilePdf} from "react-icons/vsc"
-import PartialContent from "./styledComponents/PartialContent";
 import List from "./styledComponents/List";
 
 const About: React.FC = () => {
@@ -60,7 +56,7 @@ const About: React.FC = () => {
           вновь сотни раз….И очень хочется, чтобы однажды поверив в своего малыша, семья уже не потеряла эту веру. Мы надеемся
           помочь вам в этом.
         </p>
-        <p>Почему  Новые люди?</p>
+        <SubHeader color="sailDark50">Почему  Новые люди?</SubHeader>
         <List>
           <li>
             Ну, во-первых, все дети это и есть новые люди. Недавно пришедшие в этот мир, чтобы сделать его чуточку лучше.

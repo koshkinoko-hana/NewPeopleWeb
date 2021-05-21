@@ -1,22 +1,22 @@
 @font-face {
-    font-family: "Vollkorn";
-    src: url("public/fonts/Vollkorn/static/Vollkorn-Medium.ttf");
+    font-family: "Roboto";
+    src: url("public/fonts/Roboto/Roboto-Medium.ttf");
     font-style: normal;
     font-weight: 500;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Vollkorn";
-    src: url("public/fonts/Vollkorn/static/Vollkorn-Regular.ttf");
+    font-family: "Roboto";
+    src: url("public/fonts/Roboto/Roboto-Regular.ttf");
     font-style: normal;
     font-weight: 300;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Vollkorn";
-    src: url("public/fonts/Vollkorn/static/Vollkorn-SemiBold.ttf");
+    font-family: "Roboto";
+    src: url("public/fonts/Roboto/Roboto-Bold.ttf");
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -26,7 +26,7 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: Vollkorn;
+    font-family: Roboto;
     line-height: 1.2;
     font-size: 14pt;
     background-position: center top;

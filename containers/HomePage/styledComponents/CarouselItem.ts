@@ -33,6 +33,7 @@ const CarouselItem = styled.div`
     height: 500px;    
     object-fit: contain;
     background: white;
+    padding-bottom: 50px;
   }
   
   p {

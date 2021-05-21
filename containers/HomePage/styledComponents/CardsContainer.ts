@@ -5,6 +5,7 @@ const CardsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px 10px;
+  
 `;
 
 CardsContainer.displayName = 'CardsContainer';

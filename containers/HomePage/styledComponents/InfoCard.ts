@@ -3,7 +3,6 @@ import ButtonLink from "../../../styledComponents/ButtonLink";
 
 interface Props {
   scheme: string;
-  three?: boolean;
 }
 
 const halfBakedMixin = css`
@@ -55,12 +54,23 @@ const InfoCard = styled.article<Props>`
   flex-direction: column;
   justify-content: space-between;
   p {
-    font-size: 16pt;
+    font-size: 17pt;
+    font-weight: 500;
+  }
+  >div {
+    margin-bottom: 50px;
+    
+    >div {
+      font-size: 18pt;
+      font-weight: 700;
+      margin: 0 10px;
+    }
   }
   
   h2 {
-    margin: 5px 0 15px;
-    font-size: 18pt;
+    margin: 15px 0 15px;
+    font-size: 20pt;
+   
   }
   
   &:hover {
@@ -88,14 +98,8 @@ const InfoCard = styled.article<Props>`
     justify-content: center;
   }
   
-  @media screen and (min-width: ${props => props.theme.width.mobileL}) {
+  @media screen and (min-width: ${props => props.theme.width.tablet}) {
     width: calc(50% - 20px);
-    ${props => props.three && "width: calc(33% - 20px);"}
-  }
-  
-  @media screen and (min-width: ${props => props.theme.width.laptop}) {
-    width: calc(25% - 20px);
-    ${props => props.three && "width: calc(33% - 20px);"}
   }
   ${props => props.scheme === 'halfBaked' && halfBakedMixin};
   ${props => props.scheme === 'conifer' && coniferMixin};
