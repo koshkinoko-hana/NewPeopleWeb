@@ -7,12 +7,12 @@
   "programs": {
     "header": "Наши форматы",
     "text": "Стоимость и варианты посещения",
-    "link":"/programs"
+    "link":"/forms"
   },
   "teachers": {
     "header": "Новости",
     "text": "Скоро здесь будут наши новости, следите за обновлениями на сайте",
-    "link":"/develop-center"
+    "link":"/news"
   },
   "contacts": {
     "header": "Контакты",
