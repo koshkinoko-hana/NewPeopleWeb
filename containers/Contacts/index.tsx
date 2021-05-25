@@ -6,7 +6,7 @@ import Container from "../../styledComponents/Container";
 import Header from "../../styledComponents/Header";
 import ChatLink from "./styledComponents/ChatLink";
 import {IoLogoWhatsapp} from "react-icons/io";
-import {FaInstagram, FaTelegram} from "react-icons/fa";
+import {FaInstagram, FaTelegram, FaPhone} from "react-icons/fa";
 
 const Contacts: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const Contacts: React.FC = () => {
           <ChatLink href={`https://api.whatsapp.com/send?phone=+79103443033`} whatsApp><IoLogoWhatsapp/>WhatsApp</ChatLink>
           <ChatLink href={`https://t.me/Sokolova_NS`} telegram><FaTelegram/>Telegram</ChatLink>
           <ChatLink href={`https://www.instagram.com/autmama36`} instagram><FaInstagram/>Instagram</ChatLink>
-          <ChatLink href={`tel:+7 930 418-55-41`} phone>Телефон: &nbsp;<strong>+7 930 418-55-41</strong></ChatLink>
+          <ChatLink href={`tel:+7 930 418-55-41`} phone><FaPhone/><strong>+7 930 418-55-41</strong></ChatLink>
           <ChatLink href={`mailto:new_people_sad@mail.ru`} phone><strong>new_people_sad@mail.ru</strong></ChatLink>
         </TextBlock>
       </MapContainer>

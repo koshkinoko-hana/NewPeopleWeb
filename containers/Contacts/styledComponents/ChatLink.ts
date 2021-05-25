@@ -62,7 +62,7 @@ const ChatLink = styled.a<Props>`
   border-radius: 20px;
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 280px;
   padding-left: 30px;
   box-shadow: 0px 3px 7px 5px rgba(0, 0, 0, .07);
   

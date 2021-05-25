@@ -63,8 +63,8 @@ const Header: React.FC = () => {
           <ButtonLink hideOnMobile href="/about">О нас</ButtonLink>
           <ButtonLink hideOnMobile href="/news">Новости</ButtonLink>
           <ButtonLink hideOnMobile href="/contacts">Контакты</ButtonLink>
-          <ButtonLink blue shadowed onClick={() => setShowLeaveClaim(!showLeaveClaim)}>Оставить заявку</ButtonLink>
-          {renderLeaveClaim()}
+          {/*<ButtonLink blue shadowed onClick={() => setShowLeaveClaim(!showLeaveClaim)}>Оставить заявку</ButtonLink>*/}
+          {/*{renderLeaveClaim()}*/}
           <HamburgerButton onClick={() => setMenuOpen(!menuOpen)}/>
         </LinksContainer>
       </HeaderContainer>
