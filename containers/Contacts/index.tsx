@@ -21,7 +21,7 @@ const Contacts: React.FC = () => {
           </p>
           <ChatLink href={`https://api.whatsapp.com/send?phone=+79103443033`} whatsApp><IoLogoWhatsapp/>WhatsApp</ChatLink>
           <ChatLink href={`https://t.me/Sokolova_NS`} telegram><FaTelegram/>Telegram</ChatLink>
-          <ChatLink href={`https://www.instagram.com/autmama36`} instagram><FaInstagram/>Instagram</ChatLink>
+          <ChatLink href={`https://www.instagram.com/nl_sadikvrn`} instagram><FaInstagram/>Instagram</ChatLink>
           <ChatLink href={`tel:+7 930 418-55-41`} phone><FaPhone/><strong>+7 930 418-55-41</strong></ChatLink>
           <ChatLink href={`mailto:new_people_sad@mail.ru`} phone><strong>new_people_sad@mail.ru</strong></ChatLink>
         </TextBlock>
